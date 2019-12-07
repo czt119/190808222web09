@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 网页案例</title>
+		<style>
+		h1{text-align: center;}	
+		body,ul,li,h1,h2{margin: 0;padding: 0}
+li{
+	list-style-type: none; 
+}
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+body{
+	margin: 0 auto;
+	width: 900px;
+	background-color: #FFF;
+	font:100%/1.4 helvetica,arial,sans-serif;
+}
+header{
+	background: #ccc;
+	padding: 20px;
+}
+nav{
+	float: left;
+	width: 900px;
+	height: 55px;
+	background-color: #999;
+	line-height: 50px;
+	text-align: center;
+}
+nav li a{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+}
+section{
+	float:left;
+	width: 660px;
+	height: 260px;
+	background-color:#6A9E52 ;
+}
+article{
+	float: left;
+    width: 660px;
+    margin: 0 0 0 30px;
+    padding: 20px 0;
+}
+aside{
+	float:left;
+    width: 240px;
+    height: 260px;
+    background-color: #AAA;
+}
+aside a{
+	display:block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 50px;
+    padding: 20px;
+}
+footer{
+	clear:both;
+	background: #999;
+	text-align: center;
+	padding: 20px;
+	height: 1%;
+}
+footer ul li{
+	display: inline;
+	margin: 0 15px;
+}
+body{
+	background-color: #ccc;
+	color: #FFF;
+}
+h2{
+	margin: 30px 0 30px 50px;
+}
+ul{
+	position: relative;
+	margin: 0 0 0 50px;
+}
+li{
+	list-style-type: none;
+	float: left;
+}
+input{
+	position: absolute;
+	display: none;
+}
+label{
+	display: block;
+	width: 100px;
+	height: 54px;
+	background-color: #6A9E52;
+	font-size: 20px;
+	line-height: 54px;
+	text-align: center;
+    border-radius: 5px 5px 0;
+}
+div{
+	position: absolute;
+	top: 50px;
+	left: -40px;
+    width: 400px;
+    height: 160px;
+    padding: 25px;
+    background-color: #376B1F;
+}
+p{
+	margin: 15px 0;
+	font-size: 18px;
+}
+label:hover{
+      background-color: #508438;
+      cursor: pointer;
+}
+input:checked + label{
+      position: relative;
+      top: -4px;
+      padding-top: 3px;
+      background-color: #376B1F;
+      text-decoration: underline;
+}
+input:checked~div{
+	z-index: 2;
+}
+
+		</style>
+	</head>
+	<body>
+	      <header>
+	            <h1>我的个人网站</h1>
+	      </header>
+	    <nav>
+	    	<audio src="rsc/铠甲.mp3" controls="controls">
+            </audio>
+	    </nav>
+	     <section>
+	        <ul>
+    	<li>
+    		<input type="radio" name="tab" id='tab1'checked>
+    		<label for="tab1">首页</label>
+            <div>
+            	<p>我的爱好：看书、下棋、遛鸟</p>
+            	<p>喜欢的图书：</p>
+            	<p>《金鱼》</p>
+            	<p>《水浒》</p>
+            </div>
+    	</li>
+    	<li>
+    		<input type="radio" name="tab" id='tab2'>
+    		<label for="tab2">相册</label>
+    		<div>
+    			<img src="images/6666.jpg" alt="" width="350"
+    			height="160">
+    		</div>
+    	</li>
+    	<li>
+    		<input type="radio" name='tab' id='tab3'>
+    		<label for="tab3">联系方式</label>
+    		<div>
+    			<p>邮箱：3221449764@qq.com</p>
+                <p>电话：182*********</p>
+                <p></p>
+                <p></p>
+    		</div>
+    	</li>
+    </ul>
+	     </section>
+	     <aside>
+	     	<ul>
+	     		<li><a href="#">Html</a></li>
+	     		<li><a href="#">CSS</a></li>
+	     		<li><a href="#">JavaScript</a></li>
+	     	</ul>
+	     </aside>
+	     <footer>
+	     	<ul>
+	     		<li><a href="#">版本信息</a></li>
+	     		<li><a href="#">站点地图</a></li>
+	     		<li><a href="#">联系方式</a></li>
+	     	</ul>
+	     </footer>
+	</body>
+</html>
